@@ -9,9 +9,7 @@ class Airline < ApplicationRecord
     end
 
     # avg_score method should take all of the reviews that belong to an airline and get the average overall rating
-
     def avg_score
-      return 
       reviews.average(:score).round(2).to_f
     end 
 

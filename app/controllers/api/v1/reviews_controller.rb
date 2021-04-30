@@ -1,6 +1,6 @@
-module API
-    module V1
-      class ReviewsController < ApplicationController
+module Api
+  module V1
+    class ReviewsController < ApplicationController
 
       def create
         review = Review.new(reviews_params)

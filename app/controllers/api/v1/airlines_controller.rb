@@ -1,4 +1,4 @@
-module API
+module Api
   module V1
     class AirlinesController < ApplicationController
         
@@ -10,7 +10,7 @@ module API
         
         def show
           airline = Airline.find_by(slug: params[:slug])
-          render json: AirlineSerializer.new(airlines, options).serialized_json
+          render json: AirlineSerializer.new(airline, options).serialized_json
         end 
 
         def create

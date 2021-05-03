@@ -1,7 +1,7 @@
 module Api
   module V1
     class AirlinesController < ApplicationController
-      protect_from_forgery with: :null_sessions
+      # protect_from_forgery with: :null_sessions
         
         #get all of the airlines from database and render the data as JSON
         def index

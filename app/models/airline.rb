@@ -10,6 +10,7 @@ class Airline < ApplicationRecord
 
     # avg_score method should take all of the reviews that belong to an airline and get the average overall rating
     def avg_score
+      return 0 unless reviews.count.positive?
       reviews.average(:score).round(2).to_f
     end 
 

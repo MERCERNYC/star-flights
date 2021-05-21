@@ -4,6 +4,7 @@ import Airline from './Airline';
 import styled from 'styled-components';
 
 const Home = styled.div`
+
   text-align: center;
   max-width: 1200px;
   margin-left: auto;
@@ -23,7 +24,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  width: 100%;
+  width: ['100%', '45%', '30%']
   padding: 20%;
 
 `
@@ -35,11 +36,9 @@ const Airlines = () => {
 
   useEffect(() => {
     axios.get ('/api/v1/airlines.json')
-    .then(resp => {
-      setAirlines(resp.data.data)
-    })
+    .then(resp => {setAirlines(resp.data.data)})
     .catch(resp => console.log(resp))
-  }, [airlines.length])
+  },[airlines.length])
 
   const grid = airlines.map (item => {
     return (

@@ -9,6 +9,7 @@ const Home = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px;
+ 
 `
 
 const Grid = styled.div`

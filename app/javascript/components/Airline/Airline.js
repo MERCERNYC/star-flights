@@ -28,7 +28,7 @@ const Column = styled.div`
 `
 
 const Main = styled.div`
-  padding-left: 60px;
+  padding-left: 50px;
 `
 
 
@@ -59,7 +59,6 @@ const Airline = (props) => {
                 attributes={airline.data.attributes}
                 reviews={airline.included}
               />
-
             </Main>
           </Column>
           <Column>

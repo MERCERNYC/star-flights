@@ -37,6 +37,7 @@ end
 
 group :production do 
   gem 'pg', '~> 1.1'
+  
 end 
 
 group :development do
